@@ -1,5 +1,12 @@
 {
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "pm2": "^5.3.1"
+  },
+  "scripts": {
+    "dev": "pm2-dev index.js",
+    "start": "pm2 start index.js --name IP",
+    "restart": "pm2 restart IP --update-env",
+    "stop": "pm2 stop IP"
   }
 }
